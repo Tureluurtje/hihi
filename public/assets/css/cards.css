@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
+
+:root {
+    /* Primary Colors */
+    --background-color: #f7f7f7;
+    /* very light grey */
+    --text-color: #333333;
+    /* dark grey */
+    --primary-accent: #ff6f61;
+    /* vibrant coral */
+
+    /* Secondary Colors */
+    --link-color: #0066cc;
+    /* medium blue */
+    --dropdown-bg: #e0e0e0;
+    /* slightly less transparent white */
+    --dropdown-hover-bg: #ff6f61;
+    /* match the primary accent */
+    --outstanding: #85c78f;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+    background-color: var(--background-color);
+    font-size: 14px;
+}
+
+.cards {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-grow: 1;
+    margin: 15px;
+    width: 190px;
+    background: var(--dropdown-bg);
+    padding: .4em;
+    border-radius: 6px;
+    min-width: 200px;
+    max-width: 300px;
+    flex-basis: calc(33.33% - 30px);
+    cursor: default;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+    transform: scale(0.98);
+}
+
+.category {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+}
+
+.category:hover {
+    cursor: default;
+}
+
+.heading {
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 7px;
+}
+
+.heading:hover {
+    cursor: default;
+}
+
+.author {
+    color: var(--primary-accent);
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+    cursor: default;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.name:hover {
+    cursor: default;
+}
